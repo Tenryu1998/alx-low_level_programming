@@ -9,20 +9,17 @@
  */
 int main(void)
 {
-    int n;
+	int n;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
-
-    printf("The number %d is ", n);
-
-    if (n > 0)
-        printf("positive\n");
-    else if (n == 0)
-        printf("zero\n");
-    else
-        printf("negative\n");
-
-    return 0;
+	if (n > 0)
+		printf("%d is positive",n);
+       	else if (n == 0)
+		printf("%d is zero",n);
+	else
+		printf("%d is negative",n);
+	
+	return 0;
 }
 
