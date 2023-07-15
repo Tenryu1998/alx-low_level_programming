@@ -3,8 +3,7 @@
 /**
  * main - Entry point of the program
  *
- * Description: Prints the string "Programming is like building a multilingual puzzle"
- *              using the puts function.
+ * Description: Prints the string "\"Programming is like building a multilingual puzzle"
  *
  * Return: Always 0 (Success)
  */
