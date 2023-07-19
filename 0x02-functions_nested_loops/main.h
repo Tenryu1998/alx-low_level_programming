@@ -1,13 +1,20 @@
 #ifndef MAIN_HEADER
 #define MAIN_HEADER
 
-void myFunction(int arg1, int arg2);
 
-typedef struct {
-	int value;
-	char name[20];
-} MyStruct;
+/**
+ * print_alphabet - Prints the alphabet in lowercase followed by a new line.
+ */
+void    print_alphabet(void)
+{
+        char letter = 'a';
 
-#define MY_CONSTANT 42
+        while (letter <= 'z')
+        {
+                putchar(letter);
+                letter++;
+        }
 
+        putchar('\n');
+}
 #endif
