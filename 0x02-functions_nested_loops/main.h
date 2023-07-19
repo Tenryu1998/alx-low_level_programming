@@ -1,6 +1,7 @@
 #ifndef MAIN_HEADER
 #define MAIN_HEADER
 
+#include <stdio.h>
 
 /**
  * print_alphabet - Prints the alphabet in lowercase followed by a new line.
