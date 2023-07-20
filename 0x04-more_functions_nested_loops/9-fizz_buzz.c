@@ -1,13 +1,11 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
+
 /**
- * main - Fizz-Buzz test.
- *
- * Description: Prints the numbers from 1 to 100, replacing multiples of three
- *              with "Fizz", multiples of five with "Buzz", and multiples of both
- *              three and five with "FizzBuzz".
- *
- * Return: Always 0.
+ * main - prints the numbers from 1 to 100, followed by a new line
+ * but for multiples of three prints Fizz instead of the number
+ * and for the multiples of five prints Buzz
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
