@@ -5,8 +5,7 @@
  *
  * @size: The size of the triangle.
  *
- * Description: This function prints a right-angled triangle with '#' characters.
- *		The number of '#' characters in each row increases from 1 to size.
+ * Description: This function prints a right-angled triangle with '#'.
  *
  * Return: void.
  */
