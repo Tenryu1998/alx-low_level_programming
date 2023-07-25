@@ -11,22 +11,22 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-    char *start = dest;
+	char *start = dest;
 
-    /* Copy each character of the source string to 
-     *	the destination buffer 
-    */
-    while (*src != '\0')
-    {
-        *dest = *src;
-        dest++;
-        src++;
-    }
+	/* Copy each character of the source string to 
+	 * the destination buffer 
+	 */
+	while (*src != '\0')
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
 
-    /* Copy the terminating null byte */
-    *dest = '\0';
+	/* Copy the terminating null byte */
+	*dest = '\0';
 
-    /* Return the pointer to the destination buffer */
-    return (start);
+	/* Return the pointer to the destination buffer */
+	return (start);
 }
 

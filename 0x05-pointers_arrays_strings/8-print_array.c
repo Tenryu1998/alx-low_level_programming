@@ -16,7 +16,7 @@ void print_array(int *a, int n)
 	{
 		printf("%d", a[i]);
 
- 		/* Print a comma and space */
+		/* Print a comma and space */
 		if (i != n - 1)
 		{
 			printf(", ");
