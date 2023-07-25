@@ -11,12 +11,12 @@ void print_array(int *a, int n)
 {
 	int i;
 
-	/* Loop through the array and print the elements separated by a comma and space */
+	/* Loop through the array and print the elements*/
 	for (i = 0; i < n; i++)
 	{
 		printf("%d", a[i]);
 
- 		/* Print a comma and space for elements other than the last one */
+ 		/* Print a comma and space */
 		if (i != n - 1)
 		{
 			printf(", ");

@@ -1,26 +1,25 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * puts2 - Prints every other character of a string, starting with the first character.
- *
- * @str: Pointer to the string to be printed.
+ * puts2 - prints one char out of 2 of a string
+ * followed by a new line
+ * @str: string to print the chars from
  */
 void puts2(char *str)
 {
-	int i = 0;
+	int len, i;
 
-	/* Loop through the string until the null terminator is encountered */
-	while (str[i] != '\0')
+	len = 0;
+
+	while (str[len] != '\0')
 	{
-		/* Print the character at the current index */
-		putchar(str[i]);
-
-		/* Increment the index by 2 to skip every other character */
-		i += 2;
+		len++;
 	}
 
-	/* Print a new line character to stdout */
-	putchar('\n');
-}
+	for (i = 0; i < len; i += 2)
+	{
+		_putchar(str[i]);
+	}
 
+	_putchar('\n');
+}
