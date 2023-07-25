@@ -13,8 +13,9 @@ char *_strcpy(char *dest, char *src)
 {
 	char *start = dest;
 
-	/* Copy each character of the source string to 
-	 * the destination buffer 
+	/**
+	 * Copy each character of the source string to
+	 * the destination buffer
 	 */
 	while (*src != '\0')
 	{
