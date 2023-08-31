@@ -10,9 +10,9 @@
 int _pow_recursion(int x, int y)
 {
     
-	int nextPow; 
+	int nextPow;
 	int result;
-    
+
 	/**
 	 * Power is less than 0 return -1
 	*/
