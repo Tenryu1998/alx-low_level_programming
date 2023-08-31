@@ -72,8 +72,8 @@ int palindrome_recursor(char *s, int i, int l)
 	 * si: pointer to the next string character in forward
 	 * sl: pointer to the next string in reverse
 	 */
-	char *si = s + i;
-	char *sl = s + pl;
+	char *si = *(s + i);
+	char *sl = *(s + pl);
 
 	int res;
 
