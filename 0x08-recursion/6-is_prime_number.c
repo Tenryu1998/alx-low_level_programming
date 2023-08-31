@@ -17,7 +17,7 @@ int is_prime_number(int n)
 		return (0);
 	}
 
-	ni -= 1;
+	ni = n - 1;
 
 	result = is_prime_recursor(n, ni);
 
