@@ -9,7 +9,7 @@
  */
 int _pow_recursion(int x, int y)
 {
-    
+
 	int nextPow;
 	int result;
 
