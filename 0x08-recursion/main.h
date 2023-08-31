@@ -14,6 +14,9 @@ int sqrt_recursor(int n, int i);
 int _sqrt_recursion(int n);
 int is_prime_recursor(int n, int i);
 int is_prime_number(int n);
+int strlen_recursor(char *s);
+int palindrome_recursor(char *s, int i, int len);
+int is_palindrome(char *s);
 
 
 #endif
