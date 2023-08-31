@@ -2,7 +2,7 @@
 
 /**
  * is_prime_number - checks if a number is a prime number or not
- * 
+ *
  * @n: number to evaluate
  *
  * Return: 1 if n is a prime number else 0
@@ -28,7 +28,7 @@ int is_prime_number(int n)
 /**
  * is_prime_recursor - checks if a number is a prime number
  * recursively
- * 
+ *
  * @n: number to evaluate
  * @i: iterator
  *
@@ -53,7 +53,7 @@ int is_prime_recursor(int n, int i)
 	}
 
 	ni = i - 1;
-	result = is_prime_recursor(n,ni);
+	result = is_prime_recursor(n, ni);
 
 	return (result);
 }
