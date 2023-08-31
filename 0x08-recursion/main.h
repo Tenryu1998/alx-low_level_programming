@@ -1,7 +1,9 @@
-#ifndef MAIN  // Include guard to prevent multiple inclusions
+#ifndef MAIN
 #define MAIN
 
-// Function prototypes
+/**
+ * Function prototypes
+ */ 
 int _putchar(char c);
 void _puts_recursion(char *s);
 
