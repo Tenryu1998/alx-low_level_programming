@@ -48,7 +48,7 @@ int sqrt_recursor(int n, int i)
 	}
 
 	ni = i + 1;
-	result = sqrt_recursor(n,ni);
+	result = sqrt_recursor(n, ni);
 
 	return (result);
 }
