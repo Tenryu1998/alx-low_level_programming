@@ -62,13 +62,15 @@ int strlen_recursor(char *s)
  */
 int palindrome_recursor(char *s, int i, int l)
 {
+	int res;
+
 	if (i >= l)
 		return (1);
 
 	if (s[i] != s[l])
 		return (0);
 
-	int res = palindrome_recursor(s, i + 1, l - 1);
+	res = palindrome_recursor(s, i + 1, l - 1);
 
 	return (res);
 }
