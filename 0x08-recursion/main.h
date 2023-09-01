@@ -17,6 +17,7 @@ int is_prime_number(int n);
 int strlen_recursor(char *s);
 int palindrome_recursor(char *s, int i, int len);
 int is_palindrome(char *s);
+int wildcmp(char *s1, char *s2);
 
 
 #endif
