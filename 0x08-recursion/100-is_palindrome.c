@@ -64,9 +64,11 @@ int palindrome_recursor(char *s, int i, int l)
 {
 	if (i >= l)
 		return (1);
-    
+
 	if (s[i] != s[l])
 		return (0);
 
-	return palindrome_recursor(s, i + 1, l - 1);
+	int res = palindrome_recursor(s, i + 1, l - 1);
+
+	return (res);
 }
