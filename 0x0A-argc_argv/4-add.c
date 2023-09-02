@@ -13,23 +13,20 @@ int main(int argc, char *argv[])
 {
 	int sum = 0;
 	int i = 1;
-	int j = 0;
 
 	for ( ; i < argc; i++)
 	{
-		for (j = 0; ; j++)
-		{
-			if (isalpha(argv[i][j]) == 1)
-			{
-				printf("Error\n");
-				return (1);
-			}
 
-			sum = sum + atoi(argv[i]);
+		if (*argv[i] < '0' || *argv[i] > '9')
+		{
+			printf("Error\n");
+			return (1);
 		}
+
+		sum = sum + atoi(argv[i]);
 	}
 
 
-	printf("%d\n",sum);
+	printf("%d\n", sum);
 	return (0);
 }

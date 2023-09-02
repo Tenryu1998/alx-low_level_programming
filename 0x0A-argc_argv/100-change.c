@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 			if (cents >= coinVals[i] && coinVals[i] > largestCoinVal)
 				largestCoinVal = coinVals[i];
 		}
-		
+
 		if (largestCoinVal > 0 && cents > 0)
 		{
 			coins++;
@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 		}
 		break;
 	}
-	
+
 	printf("%d\n", coins);
 	return (0);
 }
