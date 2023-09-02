@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
 
 /**
@@ -18,13 +19,13 @@ int main(int argc, char *argv[])
 	{
 		for (j = 0; ; j++)
 		{
-			if (isalpha(argv[i][j]) == true)
+			if (isalpha(argv[i][j]) == 1)
 			{
 				printf("Error\n");
 				return (1);
 			}
 
-			sum = sum + argv[i];
+			sum = sum + atoi(argv[i]);
 		}
 	}
 
