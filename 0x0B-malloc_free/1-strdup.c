@@ -25,7 +25,7 @@ char *_strdup(char *str)
 	for (i = 0; str[i]; i++)
 		l++;
 
-	if (i < 1)
+	if (l < 1)
 		return (NULL);
 
 	myArray = malloc(sizeof(char) * (l + 1));
