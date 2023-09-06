@@ -2,6 +2,28 @@
 #include <string.h>
 
 /**
+* str_length - a function that counts the number of
+* characters in a string
+* @str: string
+*
+* Return: length of the string
+*/
+
+int str_length(const char *str)
+{
+        int length = 0;
+
+        if (str != NULL)
+        {
+                while (str[length] != '\0')
+                        length++;
+        }
+
+        return (length);
+}
+
+
+/**
 * argstostr - a function that concatenates all the arguments of your program
 * @ac: count of args passed to the function
 * @av:array of arguments
