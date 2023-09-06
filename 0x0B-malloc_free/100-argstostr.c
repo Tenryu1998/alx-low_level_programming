@@ -8,19 +8,6 @@
 *
 * Return: pointer to the new string
 */
-
-int str_length(const char *str)
-{
-	int length = 0;
-	if (str != NULL)
-	{
-		while (str[length] != '\0')
-			length++;
-	}
-
-	return (length);
-}
-
 char *argstostr(int ac, char **av)
 {
 	char *concatenated_str;
