@@ -28,7 +28,6 @@ char *memSet(char *s, char c, unsigned int n)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *memBlock;
-	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
