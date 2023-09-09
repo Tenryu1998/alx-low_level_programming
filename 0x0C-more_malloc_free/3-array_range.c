@@ -16,19 +16,16 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	for (len = min; len <= max; len++)
-		;
+	len = (max - min) + 1;
 
 	memBlock = malloc(sizeof(int *) * len);
 
 	if (memBlock ==  NULL)
 		return (NULL);
 
-	i = 0;
-	for (len = min; len <= max; len++)
+	for (i = 0; min <= max; i++)
 	{
-		memBlock[i] = min + i;
-		i++;
+		memBlock[i] = min++;
 	}
 
 	return (memBlock);
