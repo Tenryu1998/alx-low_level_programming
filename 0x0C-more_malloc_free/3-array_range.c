@@ -11,22 +11,14 @@
 int *array_range(int min, int max)
 {
 	int *memBlock;
-	int len, i, x, y;
+	int len, i;
 
 	if (min > max)
 		return (NULL);
 
-	if (min < 0)
-		x = -min;
-	else
-		x = min;
-
-	if (max < 0)
-		y = -max;
-	else
-		y = max;
-
-	len = (y - x) + 1;
+	len = 0;
+	for (i = min; i <= max; i++)
+		len++;
 
 	memBlock = malloc(sizeof(int *) * len);
 
