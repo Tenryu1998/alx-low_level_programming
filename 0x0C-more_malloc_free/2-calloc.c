@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * *_memset - fills memory block with char
+ * *memSet - fills memory block with char
  * @s: memory block
- * @b: char
+ * @c: char
  * @n: limit
  *
  * Return: pointer to the memory area s
