@@ -1,6 +1,24 @@
 #include "main.h"
 
 /**
+ * *_memset - fills memory block with char
+ * @s: memory block
+ * @b: char
+ * @n: limit
+ *
+ * Return: pointer to the memory area s
+ */
+char *memSet(char *s, char c, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+		s[i] = c;
+
+	return (s);
+}
+
+/**
  * _calloc - allocates memory for an array, using malloc
  * @nmemb: number of elements
  * @size: size of the memory block
@@ -20,8 +38,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (memBlock == NULL)
 		return (NULL);
 
-	for (i = 0; i < nmemb; i++)
-		((char *)memBlock)[i] = 0;
-
+	memSet(memBlock, 0, nmemb * size);
 	return (memBlock);
 }
