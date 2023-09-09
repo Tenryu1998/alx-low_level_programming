@@ -16,7 +16,7 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	len = (max - min) + 1;
+	len = (max - min) + 2;
 
 	memBlock = malloc(sizeof(int *) * len);
 
