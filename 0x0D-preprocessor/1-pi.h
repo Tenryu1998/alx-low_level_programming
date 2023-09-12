@@ -1,5 +1,5 @@
-#ifndef PI_H
-#define PI_H
+#ifndef PI_HEADER
+#define PI_HEADER
 
 #define PI 3.14159265359
 
