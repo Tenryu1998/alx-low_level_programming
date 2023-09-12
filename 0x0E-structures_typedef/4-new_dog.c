@@ -1,53 +1,76 @@
 #include "dog.h"
-#include <stdlib.h>
 
 /**
- * new_dog - creates a new dog.
- * @name: name of the dog.
- * @age: age of the dog.
- * @owner: owner of the dog.
+ * _strlen - clalculates the length of a string
+ * @str: pointer to string memblock
+ * Return: length of string
+ */
+int _strlen(char *str)
+{
+	int l = 0;
+	while (str[l])
+		l++;
+
+	return (l);
+}
+
+/**
+ * _strcopy - copies string from source
+ * to destination
  *
- * Return: struct dog.
- * if fails, returns NULL.
+ * @dest: pointer to destination memblock
+ * @src: pointer source memblock
+ * Return: pointer to destination memblock
+ */
+char *_strcopy(char *dest, char *src)
+{
+	int i = 0;
+
+	for (; src[i] ; index++)
+		dest[i] = src[i];
+
+	dest[i] = '\0';
+	return (dest);
+}
+
+/**
+ * new_dog - a function that creates a new dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: dog's owner
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *p_dog;
-	int i, lname, lowner;
+	dog_t *ndog;
+	char dname;
+	char downer;
+	int ln, lo;
 
-	p_dog = malloc(sizeof(*p_dog));
-	if (p_dog == NULL || !(name) || !(owner))
+	if (name == NULL  || age < 0 || owner == NULL)
+		return (NULL);
+
+	ln = strlen(name);
+	lo = strlen(owner);
+
+	ndog = malloc(sizeof(dog_t));
+	if (ndog == NULL)
+		return (NULL);
+
+	ndog->name = malloc(sizeof(char) * (ln + 1));
+	if (ndog->name == NULL)
 	{
-		free(p_dog);
+		free(ndog);
 		return (NULL);
 	}
-
-	for (lname = 0; name[lname]; lname++)
-		;
-
-	for (lowner = 0; owner[lowner]; lowner++)
-		;
-
-	p_dog->name = malloc(lname + 1);
-	p_dog->owner = malloc(lowner + 1);
-
-	if (!(p_dog->name) || !(p_dog->owner))
+	ndog->name = _strcopy(ndog->name,name);
+	ndog->age = age;
+	ndog->owner = malloc(sizeof(char) * (lo + 1));
+	if (ndog->owner == NULL)
 	{
-		free(p_dog->owner);
-		free(p_dog->name);
-		free(p_dog);
+		free(ndog->owner);
+		free(ndog);
 		return (NULL);
 	}
-
-	for (i = 0; i < lname; i++)
-		p_dog->name[i] = name[i];
-	p_dog->name[i] = '\0';
-
-	p_dog->age = age;
-
-	for (i = 0; i < lowner; i++)
-		p_dog->owner[i] = owner[i];
-	p_dog->owner[i] = '\0';
-
-	return (p_dog);
+	ndog->owner = _stcopy(ndog->owner,owner);
+	return (ndog);
 }

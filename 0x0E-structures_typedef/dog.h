@@ -1,16 +1,16 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef DOG_HEADER
+#define DOG_HEADER
 
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
-*struct dog - a new type of data
-*representing a dog
-*@name: name of dog
-*@age: age of dog
-*@owner: owner's name
-*/
+ * struct dog - dog struct datatype
+ *
+ * @name: name of dog
+ * @age: dogs age
+ * @owner: dog's owner
+ */
 struct dog
 {
 	char *name;
@@ -20,8 +20,8 @@ struct dog
 
 
 /**
-*dog_t - Typedef for struct dog
-*/
+ * dog_t - new name for the type struct dog
+ */
 typedef struct dog dog_t;
 
 
