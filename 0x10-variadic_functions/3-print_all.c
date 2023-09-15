@@ -13,6 +13,7 @@ void print_all(const char * const format, ...)
 
 	if (format != NULL)
 	{
+		va_start(list, format);
 		while (format[i])
 		{
 			switch (format[i])
@@ -36,9 +37,9 @@ void print_all(const char * const format, ...)
 					i++;
 					continue;
 			}
-			if (format[i + 1])
-				sep = ", ";
+			sep = ", ";
 			i++;
 		}
+		va_end(list);
 	}
 }
